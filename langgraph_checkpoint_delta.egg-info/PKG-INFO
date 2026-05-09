@@ -1,0 +1,38 @@
+Metadata-Version: 2.4
+Name: langgraph-checkpoint-delta
+Version: 0.1.0
+Summary: A LangGraph checkpointer that persists agent state to Delta Lake tables via Unity Catalog
+Author-email: Your Name <you@example.com>
+Project-URL: Homepage, https://github.com/yourusername/langgraph-checkpoint-delta
+Project-URL: Repository, https://github.com/yourusername/langgraph-checkpoint-delta
+Project-URL: Issues, https://github.com/yourusername/langgraph-checkpoint-delta/issues
+Keywords: langgraph,delta-lake,checkpointer,databricks,unity-catalog,agents,llm
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: langgraph-checkpoint>=2.0.0
+Provides-Extra: deltalake
+Requires-Dist: deltalake>=0.19.0; extra == "deltalake"
+Provides-Extra: spark
+Requires-Dist: pyspark>=3.5.0; extra == "spark"
+Requires-Dist: delta-spark>=3.0.0; extra == "spark"
+Provides-Extra: all
+Requires-Dist: deltalake>=0.19.0; extra == "all"
+Requires-Dist: pyspark>=3.5.0; extra == "all"
+Requires-Dist: delta-spark>=3.0.0; extra == "all"
+Provides-Extra: dev
+Requires-Dist: pytest>=7.0; extra == "dev"
+Requires-Dist: pytest-asyncio>=0.23; extra == "dev"
+Requires-Dist: pytest-mock>=3.12; extra == "dev"
+Requires-Dist: mypy>=1.8; extra == "dev"
+Requires-Dist: ruff>=0.3; extra == "dev"
+Requires-Dist: langgraph>=0.2.0; extra == "dev"
